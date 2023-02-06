@@ -41,7 +41,9 @@ struct ContentView: View {
                         
 //              }
                 
-                //placerholder
+                
+                
+                // HERE WILL COME THE FETCH iMAGE
               
                     Image("salvador")
                         .resizable()
