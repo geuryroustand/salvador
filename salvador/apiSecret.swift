@@ -7,4 +7,4 @@
 
 import Foundation
 
-var apiSecret = "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"
+var apiSecret = ""
