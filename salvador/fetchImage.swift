@@ -17,11 +17,12 @@ class createImage {
     static let shared = createImage()
     
     func generateImage(withPrompt prompt: String, apiKey: String) async throws -> apiData {
-       
+        
         guard let url = URL(string: "https://api.openai.com/v1/images/generations") else {
             throw ImageError.badURL
         }
-        
+  
+        // Dicionary  
         let parameters: [String: Any] = [
             "prompt":prompt,
             "n": 1,
@@ -29,7 +30,7 @@ class createImage {
         ]
         
         let data: Data = try JSONSerialization.data(withJSONObject: parameters)
-    
+        
         var request = URLRequest(url: url)
         
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
