@@ -16,7 +16,7 @@ class CreateImage {
     
     static let shared = CreateImage()
     
-    func generateImage(withPrompt prompt: String, apiKey: String) async throws -> apiData {
+    func generateImage(withPrompt prompt: String, apiKey: String) async throws -> APIData {
         
         guard let url = URL(string: "https://api.openai.com/v1/images/generations") else {
             throw ImageError.badURL
@@ -46,7 +46,7 @@ class CreateImage {
         
         let (response, _) = try await URLSession.shared.data(for: request)
         
-        let result = try JSONDecoder().decode(apiData.self,  from: response)
+        let result = try JSONDecoder().decode(APIData.self,  from: response)
         
         return result
         

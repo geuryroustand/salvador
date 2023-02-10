@@ -13,9 +13,9 @@ struct ContentView: View {
     
     @State var userIsTyping = false
     
-    @State var image: UIImage? = nil
+    @State private var image: UIImage? = nil
     
-    @State var isLoading: Bool  = false
+    @State private var isLoading: Bool  = false
     
     //https://api.openai.com/v1/images/generations
     
@@ -35,7 +35,7 @@ struct ContentView: View {
                                 Task{
                                     do {
                                         
-                                        let response = try await CreateImage.shared.generateImage(withPrompt: userInputValue, apiKey: apiSecret)
+                                        let response = try await CreateImage.shared.generateImage(withPrompt: userInputValue, apiKey: APISecret)
                                         
                                         
                                         if let  url = response.data.map(\.url).first {
@@ -43,6 +43,8 @@ struct ContentView: View {
                                             let (data, _) = try await URLSession.shared.data(from: url)
                                             
                                             image  = UIImage(data: data)
+                                            
+                                          print("image",image!)
                                             
                                             isLoading = false
                                             
@@ -89,7 +91,7 @@ struct ContentView: View {
                 
                 
             }
-            
+         
             
             if let image  {
                 Image(uiImage: image)

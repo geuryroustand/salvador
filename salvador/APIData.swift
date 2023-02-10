@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct apiData: Codable {
+struct APIData: Codable {
     
    struct urlImageResponse:Codable {
         let url : URL
