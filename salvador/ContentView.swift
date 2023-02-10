@@ -35,7 +35,7 @@ struct ContentView: View {
                                 Task{
                                     do {
                                         
-                                        let response = try await createImage.shared.generateImage(withPrompt: userInputValue, apiKey: apiSecret)
+                                        let response = try await CreateImage.shared.generateImage(withPrompt: userInputValue, apiKey: apiSecret)
                                         
                                         
                                         if let  url = response.data.map(\.url).first {

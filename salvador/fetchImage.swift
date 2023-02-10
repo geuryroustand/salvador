@@ -12,24 +12,29 @@ enum ImageError: Error {
 }
 
 
-class createImage {
+class CreateImage {
     
-    static let shared = createImage()
+    static let shared = CreateImage()
     
     func generateImage(withPrompt prompt: String, apiKey: String) async throws -> apiData {
         
         guard let url = URL(string: "https://api.openai.com/v1/images/generations") else {
             throw ImageError.badURL
         }
-  
-        // Dicionary  
+        
+        
         let parameters: [String: Any] = [
             "prompt":prompt,
             "n": 1,
             "size":"1024x1024"
         ]
         
+        
+        
         let data: Data = try JSONSerialization.data(withJSONObject: parameters)
+        
+        
+        
         
         var request = URLRequest(url: url)
         
