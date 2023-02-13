@@ -11,7 +11,7 @@ import SwiftUI
 struct salvadorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GenerateImageView()
         }
     }
 }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18119C4E299169240098EF99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119C4D299169240098EF99 /* ContentView.swift */; };
+		18119C4E299169240098EF99 /* GenerateImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119C4D299169240098EF99 /* GenerateImageView.swift */; };
 		18119C50299169540098EF99 /* ImageDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119C4F299169540098EF99 /* ImageDataResponse.swift */; };
 		18119C522991695E0098EF99 /* FetchImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119C512991695E0098EF99 /* FetchImage.swift */; };
 		1835D7DF299A8B1D0090CCF1 /* GenerateImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18119C4D299169240098EF99 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18119C4D299169240098EF99 /* GenerateImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateImageView.swift; sourceTree = "<group>"; };
 		18119C4F299169540098EF99 /* ImageDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDataResponse.swift; sourceTree = "<group>"; };
 		18119C512991695E0098EF99 /* FetchImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchImage.swift; sourceTree = "<group>"; };
 		1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageViewModel.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 				1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */,
 				18119C512991695E0098EF99 /* FetchImage.swift */,
 				1897B97529926396002C966D /* APISecret.swift */,
-				18119C4D299169240098EF99 /* ContentView.swift */,
+				18119C4D299169240098EF99 /* GenerateImageView.swift */,
 				189A98A9298CE347003261ED /* Assets.xcassets */,
 				189A98AB298CE347003261ED /* Preview Content */,
 			);
@@ -154,7 +154,7 @@
 				18119C50299169540098EF99 /* ImageDataResponse.swift in Sources */,
 				1835D7DF299A8B1D0090CCF1 /* GenerateImageViewModel.swift in Sources */,
 				189A98A6298CE347003261ED /* salvadorApp.swift in Sources */,
-				18119C4E299169240098EF99 /* ContentView.swift in Sources */,
+				18119C4E299169240098EF99 /* GenerateImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

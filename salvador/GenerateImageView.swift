@@ -7,10 +7,11 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct GenerateImageView: View {
     
-    @StateObject private var viewModel = ViewModel()
+    @StateObject private var viewModel = GenerateImageViewModel()
     
+    //    @ObservableObject private var viewModel = GenerateImageViewModel()
     @State private var userInputValue = ""
     
     @State var userIsTyping = false
@@ -94,7 +95,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        GenerateImageView()
     }
 }
 
