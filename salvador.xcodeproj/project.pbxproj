@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		18119C4E299169240098EF99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119C4D299169240098EF99 /* ContentView.swift */; };
-		18119C50299169540098EF99 /* APIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119C4F299169540098EF99 /* APIData.swift */; };
+		18119C50299169540098EF99 /* ImageDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119C4F299169540098EF99 /* ImageDataResponse.swift */; };
 		18119C522991695E0098EF99 /* FetchImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119C512991695E0098EF99 /* FetchImage.swift */; };
+		1835D7DF299A8B1D0090CCF1 /* GenerateImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */; };
 		1897B97629926396002C966D /* APISecret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897B97529926396002C966D /* APISecret.swift */; };
 		189A98A6298CE347003261ED /* salvadorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A98A5298CE347003261ED /* salvadorApp.swift */; };
 		189A98AA298CE347003261ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189A98A9298CE347003261ED /* Assets.xcassets */; };
@@ -18,8 +19,9 @@
 
 /* Begin PBXFileReference section */
 		18119C4D299169240098EF99 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		18119C4F299169540098EF99 /* APIData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIData.swift; sourceTree = "<group>"; };
+		18119C4F299169540098EF99 /* ImageDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDataResponse.swift; sourceTree = "<group>"; };
 		18119C512991695E0098EF99 /* FetchImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchImage.swift; sourceTree = "<group>"; };
+		1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageViewModel.swift; sourceTree = "<group>"; };
 		1897B97529926396002C966D /* APISecret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISecret.swift; sourceTree = "<group>"; };
 		189A98A2298CE347003261ED /* salvador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = salvador.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189A98A5298CE347003261ED /* salvadorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = salvadorApp.swift; sourceTree = "<group>"; };
@@ -58,7 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				189A98A5298CE347003261ED /* salvadorApp.swift */,
-				18119C4F299169540098EF99 /* APIData.swift */,
+				18119C4F299169540098EF99 /* ImageDataResponse.swift */,
+				1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */,
 				18119C512991695E0098EF99 /* FetchImage.swift */,
 				1897B97529926396002C966D /* APISecret.swift */,
 				18119C4D299169240098EF99 /* ContentView.swift */,
@@ -148,7 +151,8 @@
 			files = (
 				18119C522991695E0098EF99 /* FetchImage.swift in Sources */,
 				1897B97629926396002C966D /* APISecret.swift in Sources */,
-				18119C50299169540098EF99 /* APIData.swift in Sources */,
+				18119C50299169540098EF99 /* ImageDataResponse.swift in Sources */,
+				1835D7DF299A8B1D0090CCF1 /* GenerateImageViewModel.swift in Sources */,
 				189A98A6298CE347003261ED /* salvadorApp.swift in Sources */,
 				18119C4E299169240098EF99 /* ContentView.swift in Sources */,
 			);

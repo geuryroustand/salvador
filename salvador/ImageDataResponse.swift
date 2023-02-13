@@ -7,12 +7,15 @@
 
 import Foundation
 
-struct APIData: Codable {
+//Building a Model
+
+struct ImageDataResponse: Decodable
+{
     
-   struct urlImageResponse:Codable {
+    struct ImageURL:Codable {
         let url : URL
     }
     
     let created: Int
-    let data: [urlImageResponse]
+    let data: [ImageURL]
 }

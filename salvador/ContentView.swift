@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @StateObject private var viewModel = ViewModel()
+    
     @State private var userInputValue = ""
     
     @State var userIsTyping = false
     
-    @State private var image: UIImage? = nil
+
     
-    @State private var isLoading: Bool  = false
     
     //https://api.openai.com/v1/images/generations
     
@@ -27,34 +28,14 @@ struct ContentView: View {
                     Section{
                         HStack {
                             TextField("Generate a image", text: $userInputValue, axis: .vertical)
-                            
-                            
                             Button("Create"){
-                                isLoading = true
-                                
                                 Task{
-                                    do {
-                                        
-                                        let response = try await CreateImage.shared.generateImage(withPrompt: userInputValue, apiKey: APISecret)
-                                        
-                                        
-                                        if let  url = response.data.map(\.url).first {
-                                            
-                                            let (data, _) = try await URLSession.shared.data(from: url)
-                                            
-                                            image  = UIImage(data: data)
-                                            
-                                          print("image",image!)
-                                            
-                                            isLoading = false
-                                            
-                                            userInputValue = ""
-              
-                                        }
-                                    } catch{
-                                        isLoading = false
-                                        print(error)
-                                    }
+                                    
+                                    await viewModel.getImage(with: userInputValue)
+                                    
+                                    userInputValue = ""
+                                    
+                                    
                                 }
                                 
                             }
@@ -73,8 +54,8 @@ struct ContentView: View {
                 
             }
             
-            //Test
-            if isLoading {
+            //            Test
+            if viewModel.isLoading {
                 ZStack {
                     Color(.white)
                         .opacity(0.3)
@@ -91,9 +72,9 @@ struct ContentView: View {
                 
                 
             }
-         
             
-            if let image  {
+            
+            if let image = viewModel.imageData  {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
