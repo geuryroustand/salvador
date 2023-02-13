@@ -30,11 +30,7 @@ class CreateImage {
         ]
         
         
-        
         let data: Data = try JSONSerialization.data(withJSONObject: parameters)
-        
-        
-        
         
         var request = URLRequest(url: url)
         
