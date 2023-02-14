@@ -35,7 +35,7 @@ class CreateImage {
         var request = URLRequest(url: url)
         
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
+        request.addValue("Bearer \(APISecret)", forHTTPHeaderField: "Authorization")
         
         request.httpMethod = "POST"
         request.httpBody = data

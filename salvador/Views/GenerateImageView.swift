@@ -16,10 +16,6 @@ struct GenerateImageView: View {
     
     @State var userIsTyping = false
     
-
-    
-    
-    //https://api.openai.com/v1/images/generations
     
     var body: some View {
         
@@ -55,7 +51,7 @@ struct GenerateImageView: View {
                 
             }
             
-            //            Test
+      
             if viewModel.isLoading {
                 ZStack {
                     Color(.white)
