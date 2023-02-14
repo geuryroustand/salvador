@@ -40,6 +40,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180B6AAC299B6ED10067DF1A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18119C4D299169240098EF99 /* GenerateImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		180B6AAD299B6F0F0067DF1A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18119C4F299169540098EF99 /* ImageDataResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		180B6AAE299B6F480067DF1A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		180B6AAF299B6FAC0067DF1A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				18119C512991695E0098EF99 /* FetchImage.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		189A9899298CE347003261ED = {
 			isa = PBXGroup;
 			children = (
@@ -59,12 +91,12 @@
 		189A98A4298CE347003261ED /* salvador */ = {
 			isa = PBXGroup;
 			children = (
+				180B6AAC299B6ED10067DF1A /* Views */,
 				189A98A5298CE347003261ED /* salvadorApp.swift */,
-				18119C4F299169540098EF99 /* ImageDataResponse.swift */,
-				1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */,
-				18119C512991695E0098EF99 /* FetchImage.swift */,
+				180B6AAF299B6FAC0067DF1A /* Helpers */,
+				180B6AAE299B6F480067DF1A /* ViewModels */,
+				180B6AAD299B6F0F0067DF1A /* Models */,
 				1897B97529926396002C966D /* APISecret.swift */,
-				18119C4D299169240098EF99 /* GenerateImageView.swift */,
 				189A98A9298CE347003261ED /* Assets.xcassets */,
 				189A98AB298CE347003261ED /* Preview Content */,
 			);
