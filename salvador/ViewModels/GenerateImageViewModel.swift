@@ -10,8 +10,12 @@ import MapKit
 
 extension GenerateImageView {
     @MainActor class GenerateImageViewModel: ObservableObject {
+        
         @Published  var isLoading: Bool  = false
         @Published var imageData: UIImage? = nil
+        
+        @Published var errorString: String = ""
+        @Published var showingAlert: Bool = false
         
         func getImage (with userInputValue: String) async  {
             
@@ -20,20 +24,23 @@ extension GenerateImageView {
             do {
                 
                 let response = try await CreateImage.shared.generateImage(withPrompt: userInputValue, apiKey: APISecret)
-            
+                
+                
                 if let  url = response.data.map(\.url).first {
                     
-                    print("URL", url)
                     let (data, _) = try await URLSession.shared.data(from: url)
                     
                     imageData  = UIImage(data: data)
                     
                     isLoading = false
-
+                    
                 }
             } catch{
                 isLoading = false
-                print(error)
+                
+                showingAlert = true
+                errorString = error.localizedDescription
+                
             }
             
             

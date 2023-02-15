@@ -42,7 +42,11 @@ class CreateImage {
         
         let (response, _) = try await URLSession.shared.data(for: request)
         
+        print("response.data", response)
+        
+        
         let result = try JSONDecoder().decode(ImageDataResponse.self,  from: response)
+        
         
         return result
         

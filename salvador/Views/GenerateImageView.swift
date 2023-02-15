@@ -9,11 +9,14 @@ import SwiftUI
 
 struct GenerateImageView: View {
     
-    @StateObject private var viewModel = GenerateImageViewModel()
+    //    @StateObject private var viewModel = GenerateImageViewModel()
+    
+    @ObservedObject private var viewModel = GenerateImageViewModel()
     
     @State private var userInputValue = ""
     
     @State var userIsTyping = false
+    
     
     
     var body: some View {
@@ -24,6 +27,7 @@ struct GenerateImageView: View {
                     Section{
                         HStack {
                             TextField("Generate a image", text: $userInputValue, axis: .vertical)
+                            
                             Button("Create"){
                                 Task{
                                     
@@ -47,10 +51,13 @@ struct GenerateImageView: View {
                 }
                 .navigationTitle("Type your wish image")
                 .navigationBarTitleDisplayMode(.inline)
+                .alert(isPresented: $viewModel.showingAlert){
+                    Alert(title: Text("Something went wrong again later"), message: Text("\(viewModel.errorString)"), dismissButton: .default(Text("Got it")))
+                }
                 
             }
             
-      
+            
             if viewModel.isLoading {
                 ZStack {
                     Color(.white)
