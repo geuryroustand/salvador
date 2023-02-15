@@ -7,8 +7,9 @@
 
 import Foundation
 import MapKit
+import SwiftUI
 
-extension GenerateImageView {
+//extension GenerateImageView  {
     @MainActor class GenerateImageViewModel: ObservableObject {
         
         @Published  var isLoading: Bool  = false
@@ -16,6 +17,7 @@ extension GenerateImageView {
         
         @Published var errorString: String = ""
         @Published var showingAlert: Bool = false
+        
         
         func getImage (with userInputValue: String) async  {
             
@@ -48,6 +50,10 @@ extension GenerateImageView {
         }
         
         
+        
+     
+        
+        
     }
     
-}
+//}

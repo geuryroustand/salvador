@@ -22,7 +22,6 @@ class CreateImage {
             throw ImageError.badURL
         }
         
-        
         let parameters: [String: Any] = [
             "prompt":prompt,
             "n": 1,
@@ -31,22 +30,18 @@ class CreateImage {
         
         
         let data: Data = try JSONSerialization.data(withJSONObject: parameters)
-        
+    
         var request = URLRequest(url: url)
         
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
-        
+
         request.httpMethod = "POST"
         request.httpBody = data
-        
+
         let (response, _) = try await URLSession.shared.data(for: request)
-        
-        print("response.data", response)
-        
-        
+
         let result = try JSONDecoder().decode(ImageDataResponse.self,  from: response)
-        
         
         return result
         

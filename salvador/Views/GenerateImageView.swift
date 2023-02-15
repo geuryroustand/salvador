@@ -9,14 +9,13 @@ import SwiftUI
 
 struct GenerateImageView: View {
     
-    //    @StateObject private var viewModel = GenerateImageViewModel()
+    @StateObject private var viewModel = GenerateImageViewModel()
     
-    @ObservedObject private var viewModel = GenerateImageViewModel()
+    //    @ObservedObject private var viewModel = GenerateImageViewModel()
     
     @State private var userInputValue = ""
     
     @State var userIsTyping = false
-    
     
     
     var body: some View {
@@ -28,6 +27,9 @@ struct GenerateImageView: View {
                         HStack {
                             TextField("Generate a image", text: $userInputValue, axis: .vertical)
                             
+                            
+                            //                            ExtractedView(userInputValue: $userInputValue)
+                            
                             Button("Create"){
                                 Task{
                                     
@@ -35,12 +37,10 @@ struct GenerateImageView: View {
                                     
                                     userInputValue = ""
                                     
-                                    
                                 }
                                 
                             }
                             .buttonStyle(.borderedProminent)
-                            
                             
                         }
                         
@@ -101,6 +101,10 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+
+// // /////////////////
+// WILL BE REMOVE LATER 
+// // /////////////////
 
 
 //ZStack(){
@@ -172,3 +176,4 @@ struct ContentView_Previews: PreviewProvider {
 //    }
 //
 //}
+
