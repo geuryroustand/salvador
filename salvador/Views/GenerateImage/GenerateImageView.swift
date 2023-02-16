@@ -9,42 +9,24 @@ import SwiftUI
 
 struct GenerateImageView: View {
     
-    @StateObject private var viewModel = GenerateImageViewModel()
+    //    @StateObject private var viewModel = GenerateImageViewModel()
     
-    //    @ObservedObject private var viewModel = GenerateImageViewModel()
+    @ObservedObject  var viewModel = GenerateImageViewModel()
     
-    @State private var userInputValue = ""
+    @State  var userInputValue = ""
     
     @State var userIsTyping = false
     
-    
+  
+   
     var body: some View {
-        
+ 
         ZStack {
             NavigationView{
                 Form {
                     Section{
-                        HStack {
-                            TextField("Generate a image", text: $userInputValue, axis: .vertical)
-                            
-                            
-                            //                            ExtractedView(userInputValue: $userInputValue)
-                            
-                            Button("Create"){
-                                Task{
-                                    
-                                    await viewModel.getImage(with: userInputValue)
-                                    
-                                    userInputValue = ""
-                                    
-                                }
-                                
-                            }
-                            .buttonStyle(.borderedProminent)
-                            
-                        }
                         
-                        
+                        fetchButton
                         
                     }
                     
@@ -59,29 +41,16 @@ struct GenerateImageView: View {
             
             
             if viewModel.isLoading {
-                ZStack {
-                    Color(.white)
-                        .opacity(0.3)
-                        .ignoresSafeArea()
-                    ProgressView("Creating your image")
-                        .padding()
-                        .background(
-                            RoundedRectangle(cornerRadius: 10)
-                                .fill(Color(.systemBackground))
-                        )
-                        .shadow(radius: 10)
-                    
-                }
-                
+                isLoading
                 
             }
             
             
-            if let image = viewModel.imageData  {
-                Image(uiImage: image)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 256)
+            if (viewModel.imageData != nil) {
+                
+                singleImage
+                
+
             }
             
             
@@ -92,7 +61,7 @@ struct GenerateImageView: View {
         
     }
     
-    
+  
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -102,8 +71,15 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 
+
+
+
+
+
+
+
 // // /////////////////
-// WILL BE REMOVE LATER 
+// WILL BE REMOVE LATER
 // // /////////////////
 
 
