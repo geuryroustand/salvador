@@ -7,10 +7,10 @@
 
 import SwiftUI
 
+
 enum ImageError: Error {
     case badURL
 }
-
 
 class CreateImage {
     
@@ -32,9 +32,10 @@ class CreateImage {
 //
 //
 //        let data: Data = try JSONSerialization.data(withJSONObject: parameters)
-        
+     
         
         let requestBody = ImageDataRequest(prompt: prompt, numberOfImage: 1, imageSize: "1024x1024")
+        
         let jsonData = try JSONEncoder().encode(requestBody)
 
         
