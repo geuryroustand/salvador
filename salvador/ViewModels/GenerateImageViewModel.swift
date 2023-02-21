@@ -12,7 +12,7 @@ import SwiftUI
 
 
 
-extension GenerateImageView  {
+//extension GenerateImageView  {
 @MainActor class GenerateImageViewModel: ObservableObject {
     
     @Published  var isLoading: Bool  = false
@@ -87,4 +87,4 @@ extension GenerateImageView  {
     
 }
     
-}
+//}

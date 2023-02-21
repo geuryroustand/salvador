@@ -17,10 +17,21 @@
 		189A98A6298CE347003261ED /* salvadorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A98A5298CE347003261ED /* salvadorApp.swift */; };
 		189A98AA298CE347003261ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189A98A9298CE347003261ED /* Assets.xcassets */; };
 		189A98AD298CE347003261ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189A98AC298CE347003261ED /* Preview Assets.xcassets */; };
+		18E6104029A52E4F00E96E88 /* UnitTestingGenerateImageViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6103F29A52E4F00E96E88 /* UnitTestingGenerateImageViewModel_Tests.swift */; };
 		18EA5942299E5234000A87C2 /* GenerateImageView+isLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA5941299E5234000A87C2 /* GenerateImageView+isLoading.swift */; };
 		18EA5944299E54D8000A87C2 /* ImageDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA5943299E54D8000A87C2 /* ImageDataRequest.swift */; };
 		18EA5946299E66B6000A87C2 /* GenerateImageView+singleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA5945299E66B6000A87C2 /* GenerateImageView+singleImage.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18E6103A29A52DA800E96E88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189A989A298CE347003261ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 189A98A1298CE347003261ED;
+			remoteInfo = salvador;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		18119C4D299169240098EF99 /* GenerateImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateImageView.swift; sourceTree = "<group>"; };
@@ -34,6 +45,8 @@
 		189A98A5298CE347003261ED /* salvadorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = salvadorApp.swift; sourceTree = "<group>"; };
 		189A98A9298CE347003261ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		189A98AC298CE347003261ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18E6103629A52DA700E96E88 /* salvadorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = salvadorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E6103F29A52E4F00E96E88 /* UnitTestingGenerateImageViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingGenerateImageViewModel_Tests.swift; sourceTree = "<group>"; };
 		18EA5941299E5234000A87C2 /* GenerateImageView+isLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GenerateImageView+isLoading.swift"; sourceTree = "<group>"; };
 		18EA5943299E54D8000A87C2 /* ImageDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataRequest.swift; sourceTree = "<group>"; };
 		18EA5945299E66B6000A87C2 /* GenerateImageView+singleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GenerateImageView+singleImage.swift"; sourceTree = "<group>"; };
@@ -41,6 +54,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		189A989F298CE347003261ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E6103329A52DA700E96E88 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,8 +91,10 @@
 		180B6AAE299B6F480067DF1A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */,
 			);
-			path = ViewModels;
+			name = ViewModels;
+			path = ../../ViewModels;
 			sourceTree = "<group>";
 		};
 		180B6AAF299B6FAC0067DF1A /* Helpers */ = {
@@ -87,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				189A98A4298CE347003261ED /* salvador */,
+				18E6103729A52DA800E96E88 /* salvadorTests */,
 				189A98A3298CE347003261ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				189A98A2298CE347003261ED /* salvador.app */,
+				18E6103629A52DA700E96E88 /* salvadorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,7 +129,6 @@
 				180B6AAC299B6ED10067DF1A /* Views */,
 				189A98A5298CE347003261ED /* salvadorApp.swift */,
 				180B6AAF299B6FAC0067DF1A /* Helpers */,
-				180B6AAE299B6F480067DF1A /* ViewModels */,
 				180B6AAD299B6F0F0067DF1A /* Models */,
 				189A98A9298CE347003261ED /* Assets.xcassets */,
 				189A98AB298CE347003261ED /* Preview Content */,
@@ -122,6 +145,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		18E6103729A52DA800E96E88 /* salvadorTests */ = {
+			isa = PBXGroup;
+			children = (
+				18E6103F29A52E4F00E96E88 /* UnitTestingGenerateImageViewModel_Tests.swift */,
+			);
+			path = salvadorTests;
+			sourceTree = "<group>";
+		};
 		18EA5940299E4F8E000A87C2 /* GenerateImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +160,7 @@
 				18834E31299D215300A4B428 /* GenerateImageView+fetchButton.swift */,
 				18EA5941299E5234000A87C2 /* GenerateImageView+isLoading.swift */,
 				18EA5945299E66B6000A87C2 /* GenerateImageView+singleImage.swift */,
-				1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */,
+				180B6AAE299B6F480067DF1A /* ViewModels */,
 			);
 			path = GenerateImage;
 			sourceTree = "<group>";
@@ -154,6 +185,24 @@
 			productReference = 189A98A2298CE347003261ED /* salvador.app */;
 			productType = "com.apple.product-type.application";
 		};
+		18E6103529A52DA700E96E88 /* salvadorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E6103E29A52DA800E96E88 /* Build configuration list for PBXNativeTarget "salvadorTests" */;
+			buildPhases = (
+				18E6103229A52DA700E96E88 /* Sources */,
+				18E6103329A52DA700E96E88 /* Frameworks */,
+				18E6103429A52DA700E96E88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18E6103B29A52DA800E96E88 /* PBXTargetDependency */,
+			);
+			name = salvadorTests;
+			productName = salvadorTests;
+			productReference = 18E6103629A52DA700E96E88 /* salvadorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -166,6 +215,11 @@
 				TargetAttributes = {
 					189A98A1298CE347003261ED = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					18E6103529A52DA700E96E88 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+						TestTargetID = 189A98A1298CE347003261ED;
 					};
 				};
 			};
@@ -183,6 +237,7 @@
 			projectRoot = "";
 			targets = (
 				189A98A1298CE347003261ED /* salvador */,
+				18E6103529A52DA700E96E88 /* salvadorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -195,6 +250,13 @@
 				189A98AD298CE347003261ED /* Preview Assets.xcassets in Resources */,
 				182C00C3299F9A9A00FE7762 /* APISecret.json in Resources */,
 				189A98AA298CE347003261ED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E6103429A52DA700E96E88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +280,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18E6103229A52DA700E96E88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E6104029A52E4F00E96E88 /* UnitTestingGenerateImageViewModel_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18E6103B29A52DA800E96E88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 189A98A1298CE347003261ED /* salvador */;
+			targetProxy = 18E6103A29A52DA800E96E88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		189A98AE298CE347003261ED /* Debug */ = {
@@ -391,6 +469,53 @@
 			};
 			name = Release;
 		};
+		18E6103C29A52DA800E96E88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.geury.salvadorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/salvador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/salvador";
+			};
+			name = Debug;
+		};
+		18E6103D29A52DA800E96E88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.geury.salvadorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/salvador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/salvador";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -408,6 +533,15 @@
 			buildConfigurations = (
 				189A98B1298CE347003261ED /* Debug */,
 				189A98B2298CE347003261ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E6103E29A52DA800E96E88 /* Build configuration list for PBXNativeTarget "salvadorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E6103C29A52DA800E96E88 /* Debug */,
+				18E6103D29A52DA800E96E88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
