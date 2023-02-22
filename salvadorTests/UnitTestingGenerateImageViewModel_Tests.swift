@@ -55,7 +55,33 @@ import XCTest
       
          await modelView.getImage(with: userInputValue)
         
-        XCTAssertTrue((modelView.imageData != nil))
+        XCTAssertNotNil(modelView.imageData)
+        XCTAssertFalse(modelView.isLoading)
+
+
+    }
+    
+    func test_UnitTestingGenerateImageViewModel_LoadJSON_ShouldDecoderTheJSONFile() async  {
+        
+        let fileName = "APISecret"
+      
+        let JSONFile = modelView.loadJson(fileName: fileName)
+        
+        XCTAssertNotNil(JSONFile)
+      
+        XCTAssertEqual(JSONFile.APISecret, JSONFile.APISecret)
+
+
+    }
+    
+    func test_UnitTestingGenerateImageViewModel_LoadJSON_ShouldThowFatalError() async  {
+        
+        let fileName = "invalid_fileName"
+      
+        let JSONFile = modelView.loadJson(fileName: fileName)
+        
+      
+        XCTAssertThrowsError(JSONFile)
 
 
     }
