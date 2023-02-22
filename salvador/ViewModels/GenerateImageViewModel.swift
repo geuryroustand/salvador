@@ -29,16 +29,13 @@ import SwiftUI
             
             let APISecretKey  =  loadJson(fileName: "APISecret")
 
-       
-            
             let response = try await CreateImage.shared.generateImage(withPrompt: userInputValue, apiKey:APISecretKey.APISecret)
             
+            print("response", response)
             
             if let  url = response.data.map(\.url).first {
                 
                 let (data, _) = try await URLSession.shared.data(from: url)
-                
-                print("data",data)
                 
                 imageData  = UIImage(data: data)
                 

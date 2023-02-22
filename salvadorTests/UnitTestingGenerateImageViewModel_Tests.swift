@@ -46,9 +46,18 @@ import XCTest
         XCTAssert(errorString.isEmpty, "")
         XCTAssertFalse(showingAlert)
         
+        
+    }
+    
+    func test_UnitTestingGenerateImageViewModel_GetImage_ShouldPresentAfterFetch() async  {
+        
+        let userInputValue = UUID().uuidString
+      
+         await modelView.getImage(with: userInputValue)
+        
+        XCTAssertTrue((modelView.imageData != nil))
 
-        
-        
+
     }
  
 

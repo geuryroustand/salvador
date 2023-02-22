@@ -39,6 +39,7 @@ struct GenerateImageView: View {
                 
             }
             
+         
             
             if viewModel.isLoading {
                 isLoading
