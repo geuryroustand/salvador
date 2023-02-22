@@ -28,7 +28,7 @@ import SwiftUI
         do {
             
             let APISecretKey  =  loadJson(fileName: "APISecret")
-
+            
             let response = try await CreateImage.shared.generateImage(withPrompt: userInputValue, apiKey:APISecretKey.APISecret)
             
             print("response", response)
@@ -42,9 +42,25 @@ import SwiftUI
                 isLoading = false
                 
             }
-        } catch{
-            isLoading = false
             
+            
+            
+        } catch ImageError.missingParameters{
+            isLoading = false
+            showingAlert = true
+            errorString = "Missing Parameters"
+        }
+        
+        catch ImageError.badURL {
+            isLoading = false
+            showingAlert = true
+            errorString = "Invalid URL"
+            
+            
+            
+        }
+        catch{
+            isLoading = false
             showingAlert = true
             errorString = error.localizedDescription
             
@@ -60,9 +76,9 @@ import SwiftUI
     func loadJson(fileName: String) -> APISecretData {
         
         guard let url = Bundle.main.url(forResource: fileName, withExtension: "json")else{
-     
+            
             fatalError("Could not find \(fileName) in the project")
-
+            
         }
         
         guard let data = try? Data(contentsOf: url ) else {
@@ -83,5 +99,5 @@ import SwiftUI
     }
     
 }
-    
+
 //}

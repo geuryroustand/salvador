@@ -9,7 +9,7 @@ import SwiftUI
 
 
 enum ImageError: Error {
-    case badURL
+    case badURL, missingParameters
 }
 
 class CreateImage {
@@ -36,7 +36,11 @@ class CreateImage {
         
         let requestBody = ImageDataRequest(prompt: prompt, numberOfImage: 1, imageSize: "1024x1024")
         
-        let jsonData = try JSONEncoder().encode(requestBody)
+        
+        
+        guard let jsonData = try? JSONEncoder().encode(requestBody) else{
+            throw ImageError.missingParameters
+        }
 
         
         var request = URLRequest(url: url)
@@ -48,7 +52,7 @@ class CreateImage {
         request.httpBody = jsonData
 
         let (response, _) = try await URLSession.shared.data(for: request)
-
+  
         let result = try JSONDecoder().decode(ImageDataResponse.self,  from: response)
         
         return result
