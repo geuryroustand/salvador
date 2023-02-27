@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct APISecretData: Codable {
+struct APISecretData: Decodable {
     let APISecret: String
 }

@@ -11,10 +11,10 @@ import XCTest
 
 @MainActor class UnitTestingGenerateImageViewModel_Tests: XCTestCase {
     
-    var modelView : GenerateImageViewModel!
+    var modelView : GenerateImageView.ViewModel!
 
     @MainActor override func setUpWithError() throws {
-        modelView = GenerateImageViewModel()
+        modelView = GenerateImageView.ViewModel()
         
         
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -41,8 +41,7 @@ import XCTest
         
         let errorString = modelView.errorString
         
-        let showingAlert = modelView.showingAlert
-        
+        let showingAlert = modelView.showAlert
         XCTAssert(errorString.isEmpty, "")
         XCTAssertFalse(showingAlert)
         
@@ -61,30 +60,6 @@ import XCTest
 
     }
     
-    func test_UnitTestingGenerateImageViewModel_LoadJSON_ShouldDecoderTheJSONFile() async  {
-        
-        let fileName = "APISecret"
-      
-        let JSONFile = modelView.loadJson(fileName: fileName)
-        
-        XCTAssertNotNil(JSONFile)
-      
-        XCTAssertEqual(JSONFile.APISecret, JSONFile.APISecret)
-
-
-    }
-    
-    func test_UnitTestingGenerateImageViewModel_LoadJSON_ShouldThowFatalError() async  {
-        
-        let fileName = "invalid_fileName"
-      
-        let JSONFile = modelView.loadJson(fileName: fileName)
-        
-      
-        XCTAssertThrowsError(JSONFile)
-
-
-    }
  
 
 }
