@@ -16,6 +16,8 @@
 		182C00BF299F676400FE7762 /* APISecretData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C00BE299F676400FE7762 /* APISecretData.swift */; };
 		182C00C3299F9A9A00FE7762 /* APISecret.json in Resources */ = {isa = PBXBuildFile; fileRef = 182C00C2299F9A9A00FE7762 /* APISecret.json */; };
 		1835D7DF299A8B1D0090CCF1 /* GenerateImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */; };
+		18545E3B29AE2CC400B0E0EA /* saveImageToGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18545E3A29AE2CC400B0E0EA /* saveImageToGallery.swift */; };
+		1862C38029AD0B5000B33CC2 /* DownLoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862C37F29AD0B5000B33CC2 /* DownLoadImage.swift */; };
 		18834E32299D215300A4B428 /* GenerateImageView+fetchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18834E31299D215300A4B428 /* GenerateImageView+fetchButton.swift */; };
 		189A98A6298CE347003261ED /* salvadorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A98A5298CE347003261ED /* salvadorApp.swift */; };
 		189A98AA298CE347003261ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189A98A9298CE347003261ED /* Assets.xcassets */; };
@@ -48,6 +50,8 @@
 		182C00BE299F676400FE7762 /* APISecretData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISecretData.swift; sourceTree = "<group>"; };
 		182C00C2299F9A9A00FE7762 /* APISecret.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = APISecret.json; sourceTree = "<group>"; };
 		1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageViewModel.swift; sourceTree = "<group>"; };
+		18545E3A29AE2CC400B0E0EA /* saveImageToGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveImageToGallery.swift; sourceTree = "<group>"; };
+		1862C37F29AD0B5000B33CC2 /* DownLoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownLoadImage.swift; sourceTree = "<group>"; };
 		18834E31299D215300A4B428 /* GenerateImageView+fetchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GenerateImageView+fetchButton.swift"; sourceTree = "<group>"; };
 		189A98A2298CE347003261ED /* salvador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = salvador.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189A98A5298CE347003261ED /* salvadorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = salvadorApp.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				18119C4F299169540098EF99 /* ImageDataResponse.swift */,
+				1862C37F29AD0B5000B33CC2 /* DownLoadImage.swift */,
 				18EA5943299E54D8000A87C2 /* ImageDataRequest.swift */,
 				182C00BE299F676400FE7762 /* APISecretData.swift */,
 			);
@@ -113,6 +118,7 @@
 				18DFB76629ACBB100095668E /* MockImageService.swift */,
 				1811E27229ACD9A100595A98 /* MockFileLoaderService.swift */,
 				182168EA29A7B61E0051D1A0 /* FileLoaderService.swift */,
+				18545E3A29AE2CC400B0E0EA /* saveImageToGallery.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -289,9 +295,11 @@
 				1835D7DF299A8B1D0090CCF1 /* GenerateImageViewModel.swift in Sources */,
 				1811E27329ACD9A100595A98 /* MockFileLoaderService.swift in Sources */,
 				18EA5946299E66B6000A87C2 /* GenerateImageView+singleImage.swift in Sources */,
+				1862C38029AD0B5000B33CC2 /* DownLoadImage.swift in Sources */,
 				18834E32299D215300A4B428 /* GenerateImageView+fetchButton.swift in Sources */,
 				189A98A6298CE347003261ED /* salvadorApp.swift in Sources */,
 				18EA5942299E5234000A87C2 /* GenerateImageView+isLoading.swift in Sources */,
+				18545E3B29AE2CC400B0E0EA /* saveImageToGallery.swift in Sources */,
 				182168EB29A7B61E0051D1A0 /* FileLoaderService.swift in Sources */,
 				18119C4E299169240098EF99 /* GenerateImageView.swift in Sources */,
 				18DFB76729ACBB100095668E /* MockImageService.swift in Sources */,
@@ -443,6 +451,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"salvador/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "I need this ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -471,6 +480,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"salvador/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "I need this ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

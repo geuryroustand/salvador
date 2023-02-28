@@ -47,7 +47,19 @@ struct GenerateImageView: View {
             
             if (viewModel.imageData != nil) {
                 
-                singleImage
+                VStack {
+                    singleImage
+                    
+                    Button{
+                        saveImage.share.imageURL = viewModel.imageURL
+                        saveImage.share.saveImageToGallery()
+        
+                    
+                }
+            label: {
+                Image(systemName: "square.and.arrow.down")
+            }
+            .buttonStyle(.borderedProminent)
                 
                 
             }
@@ -61,6 +73,10 @@ struct GenerateImageView: View {
     }
     
     
+    
+}
+
+
 }
 
 struct ContentView_Previews: PreviewProvider {

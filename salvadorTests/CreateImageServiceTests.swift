@@ -30,6 +30,7 @@ final class FetchImageTests: XCTestCase {
     func testGenerateImage_WithValidData_ShouldReturnImageDataResponse() async throws {
         // Arrange
         let mockService = MockCreateImageService()
+        
         let imageDataResponse = ImageDataResponse(created: 123, data: [ImageDataResponse.ImageURL(url: URL(string: "https://example.com/image.png")!)])
         mockService.imageDataResponse = imageDataResponse
         

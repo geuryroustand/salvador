@@ -21,6 +21,8 @@ extension GenerateImageView  {
         @Published var errorString: String = ""
         @Published var showAlert: Bool = false
         
+        @Published var imageURL: URL?
+        
         func getImage (with userInputValue: String) async  {
             
             isLoading = true
@@ -34,11 +36,14 @@ extension GenerateImageView  {
                 let response = try await CreateImageService.shared.generateImage(withPrompt: userInputValue, apiKey:APISecretKey.APISecret)
                 
                 if let  url = response.data.map(\.url).first {
-                    
+                                        
+                    imageURL = URL(string: "\(url)")
+
                     let (data, _) = try await URLSession.shared.data(from: url)
-                    
+                   
+
                     imageData  = UIImage(data: data)
-                    
+
                     isLoading = false
                     
                 }
@@ -71,7 +76,6 @@ extension GenerateImageView  {
             
             
         }
-        
         
     }
     

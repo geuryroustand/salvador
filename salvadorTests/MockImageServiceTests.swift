@@ -30,15 +30,12 @@ final class MockImageService: XCTestCase {
     }
     
     
-    func testLoadFile_WithInValidData_ShouldReturnAPISecretData() throws {
-        let mockService = MockFileLoaderService()
-        mockService.apiSecretData = APISecretData(APISecret: "test api secret")
+    func testLoadFile_WithInvalidData_ShouldThrowError() throws {
+        // Arrange
+        let mockFileLoader = MockFileLoaderService()
+        mockFileLoader.error = JSONFileError.JSONFileNowFound
         
-        
-        let result = try mockService.loadFile(fileName: "test")
-        
-        XCTAssertEqual(result.APISecret, "test api secret")
+        // Act + Assert
+        XCTAssertThrowsError(try mockFileLoader.loadFile(fileName: "test-file"))
     }
-    
-    
 }
