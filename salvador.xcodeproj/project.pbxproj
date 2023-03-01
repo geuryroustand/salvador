@@ -17,6 +17,7 @@
 		182C00C3299F9A9A00FE7762 /* APISecret.json in Resources */ = {isa = PBXBuildFile; fileRef = 182C00C2299F9A9A00FE7762 /* APISecret.json */; };
 		1835D7DF299A8B1D0090CCF1 /* GenerateImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */; };
 		18545E3B29AE2CC400B0E0EA /* saveImageToGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18545E3A29AE2CC400B0E0EA /* saveImageToGallery.swift */; };
+		18545E3F29AE511700B0E0EA /* integration.yml in Resources */ = {isa = PBXBuildFile; fileRef = 18545E3E29AE511700B0E0EA /* integration.yml */; };
 		1862C38029AD0B5000B33CC2 /* DownLoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862C37F29AD0B5000B33CC2 /* DownLoadImage.swift */; };
 		18834E32299D215300A4B428 /* GenerateImageView+fetchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18834E31299D215300A4B428 /* GenerateImageView+fetchButton.swift */; };
 		189A98A6298CE347003261ED /* salvadorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A98A5298CE347003261ED /* salvadorApp.swift */; };
@@ -51,6 +52,7 @@
 		182C00C2299F9A9A00FE7762 /* APISecret.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = APISecret.json; sourceTree = "<group>"; };
 		1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageViewModel.swift; sourceTree = "<group>"; };
 		18545E3A29AE2CC400B0E0EA /* saveImageToGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveImageToGallery.swift; sourceTree = "<group>"; };
+		18545E3E29AE511700B0E0EA /* integration.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = integration.yml; sourceTree = "<group>"; };
 		1862C37F29AD0B5000B33CC2 /* DownLoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownLoadImage.swift; sourceTree = "<group>"; };
 		18834E31299D215300A4B428 /* GenerateImageView+fetchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GenerateImageView+fetchButton.swift"; sourceTree = "<group>"; };
 		189A98A2298CE347003261ED /* salvador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = salvador.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +125,22 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		18545E3C29AE509A00B0E0EA /* github */ = {
+			isa = PBXGroup;
+			children = (
+				18545E3D29AE50DB00B0E0EA /* workflows */,
+			);
+			path = github;
+			sourceTree = "<group>";
+		};
+		18545E3D29AE50DB00B0E0EA /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				18545E3E29AE511700B0E0EA /* integration.yml */,
+			);
+			path = workflows;
+			sourceTree = "<group>";
+		};
 		189A9899298CE347003261ED = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +167,7 @@
 				180B6AAF299B6FAC0067DF1A /* Helpers */,
 				180B6AAD299B6F0F0067DF1A /* Models */,
 				189A98A9298CE347003261ED /* Assets.xcassets */,
+				18545E3C29AE509A00B0E0EA /* github */,
 				189A98AB298CE347003261ED /* Preview Content */,
 			);
 			path = salvador;
@@ -271,6 +290,7 @@
 				189A98AD298CE347003261ED /* Preview Assets.xcassets in Resources */,
 				182C00C3299F9A9A00FE7762 /* APISecret.json in Resources */,
 				189A98AA298CE347003261ED /* Assets.xcassets in Resources */,
+				18545E3F29AE511700B0E0EA /* integration.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,9 +466,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"salvador/Preview Content\"";
+				DEVELOPMENT_TEAM = H7856N8BHP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "I need this ";
@@ -461,9 +483,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.geury.salvador;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.geury.salvador;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -475,9 +498,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"salvador/Preview Content\"";
+				DEVELOPMENT_TEAM = H7856N8BHP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "I need this ";
@@ -490,9 +515,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.geury.salvador;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.geury.salvador;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
