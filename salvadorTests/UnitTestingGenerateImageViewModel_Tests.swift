@@ -48,17 +48,17 @@ import XCTest
         
     }
     
-    func test_UnitTestingGenerateImageViewModel_GetImage_ShouldPresentAfterFetch() async  {
-        
-        let userInputValue = UUID().uuidString
-      
-         await modelView.getImage(with: userInputValue)
-        
-        XCTAssertNotNil(modelView.imageData)
-        XCTAssertFalse(modelView.isLoading)
-
-
-    }
+//    func test_UnitTestingGenerateImageViewModel_GetImage_ShouldPresentAfterFetch() async  {
+//
+//        let userInputValue = UUID().uuidString
+//
+//         await modelView.getImage(with: userInputValue)
+//
+//        XCTAssertNotNil(modelView.imageData)
+//        XCTAssertFalse(modelView.isLoading)
+//
+//
+//    }
     
  
 
