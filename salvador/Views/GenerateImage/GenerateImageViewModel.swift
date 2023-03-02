@@ -9,56 +9,74 @@ import Foundation
 import MapKit
 import SwiftUI
 
-//extension GenerateImageView  {
-@MainActor class GenerateImageViewModel: ObservableObject {
-    
-    @Published  var isLoading: Bool  = false
-    @Published var imageData: UIImage? = nil
-    
-    @Published var errorString: String = ""
-    @Published var showingAlert: Bool = false
-    
-    @Published var userInputValue = ""
-    
-    
-    
-    func getImage (with userInputValue: String) async  {
+
+
+
+extension GenerateImageView  {
+    @MainActor class ViewModel: ObservableObject {
         
-        isLoading = true
+        @Published  var isLoading: Bool  = false
+        @Published var imageData: UIImage? = nil
         
-        do {
+        @Published var errorString: String = ""
+        @Published var showAlert: Bool = false
+        
+        @Published var imageURL: URL?
+        
+        func getImage (with userInputValue: String) async  {
             
-            let response = try await CreateImage.shared.generateImage(withPrompt: userInputValue, apiKey: APISecret)
+            isLoading = true
             
-            
-            if let  url = response.data.map(\.url).first {
+            do {
                 
-                let (data, _) = try await URLSession.shared.data(from: url)
+                guard let APISecretKey  =  try? FileLoaderService(fileName: "APISecret") else{
+                    throw JSONFileError.JSONFileNowFound
+                }
                 
-                print("data",data)
+                let response = try await CreateImageService.shared.generateImage(withPrompt: userInputValue, apiKey:APISecretKey.APISecret)
                 
-                imageData  = UIImage(data: data)
+                if let  url = response.data.map(\.url).first {
+                                        
+                    imageURL = URL(string: "\(url)")
+
+                    let (data, _) = try await URLSession.shared.data(from: url)
+                   
+
+                    imageData  = UIImage(data: data)
+
+                    isLoading = false
+                    
+                }
                 
+                
+            } catch JSONFileError.JSONFileNowFound {
                 isLoading = false
+                showAlert = true
+                errorString = "JSON APISecret not found"
+                
+            } catch ImageError.encodingOfRequestBodyFailed{
+                isLoading = false
+                showAlert = true
+                errorString = "Encoding Request Body Failed"
+            }
+            
+            catch ImageError.badURL {
+                isLoading = false
+                showAlert = true
+                errorString = "Invalid URL"
                 
             }
-        } catch{
-            isLoading = false
+            catch{
+                isLoading = false
+                showAlert = true
+                errorString = error.localizedDescription
+                
+            }
             
-            showingAlert = true
-            errorString = error.localizedDescription
+            
             
         }
         
-        
-        
     }
     
-    
-    
-    
-    
-    
 }
-
-//}

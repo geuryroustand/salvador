@@ -9,29 +9,60 @@
 /* Begin PBXBuildFile section */
 		18119C4E299169240098EF99 /* GenerateImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119C4D299169240098EF99 /* GenerateImageView.swift */; };
 		18119C50299169540098EF99 /* ImageDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119C4F299169540098EF99 /* ImageDataResponse.swift */; };
-		18119C522991695E0098EF99 /* FetchImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119C512991695E0098EF99 /* FetchImage.swift */; };
+		18119C522991695E0098EF99 /* CreateImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119C512991695E0098EF99 /* CreateImageService.swift */; };
+		1811E27329ACD9A100595A98 /* MockFileLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811E27229ACD9A100595A98 /* MockFileLoaderService.swift */; };
+		1811E27529ACF22000595A98 /* MockFileLoaderServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811E27429ACF22000595A98 /* MockFileLoaderServiceTests.swift */; };
+		182168EB29A7B61E0051D1A0 /* FileLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182168EA29A7B61E0051D1A0 /* FileLoaderService.swift */; };
+		182C00BF299F676400FE7762 /* APISecretData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C00BE299F676400FE7762 /* APISecretData.swift */; };
+		182C00C3299F9A9A00FE7762 /* APISecret.json in Resources */ = {isa = PBXBuildFile; fileRef = 182C00C2299F9A9A00FE7762 /* APISecret.json */; };
 		1835D7DF299A8B1D0090CCF1 /* GenerateImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */; };
+		18545E3B29AE2CC400B0E0EA /* saveImageToGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18545E3A29AE2CC400B0E0EA /* saveImageToGallery.swift */; };
+		18545E3F29AE511700B0E0EA /* integration.yml in Resources */ = {isa = PBXBuildFile; fileRef = 18545E3E29AE511700B0E0EA /* integration.yml */; };
+		1862C38029AD0B5000B33CC2 /* DownLoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862C37F29AD0B5000B33CC2 /* DownLoadImage.swift */; };
 		18834E32299D215300A4B428 /* GenerateImageView+fetchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18834E31299D215300A4B428 /* GenerateImageView+fetchButton.swift */; };
-		1897B97629926396002C966D /* APISecret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897B97529926396002C966D /* APISecret.swift */; };
 		189A98A6298CE347003261ED /* salvadorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A98A5298CE347003261ED /* salvadorApp.swift */; };
 		189A98AA298CE347003261ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189A98A9298CE347003261ED /* Assets.xcassets */; };
 		189A98AD298CE347003261ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189A98AC298CE347003261ED /* Preview Assets.xcassets */; };
+		18A68D6F29A65A1900B8DD29 /* CreateImageServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A68D6E29A65A1900B8DD29 /* CreateImageServiceTests.swift */; };
+		18DFB76729ACBB100095668E /* MockImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFB76629ACBB100095668E /* MockImageService.swift */; };
+		18E6104029A52E4F00E96E88 /* UnitTestingGenerateImageViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6103F29A52E4F00E96E88 /* UnitTestingGenerateImageViewModel_Tests.swift */; };
 		18EA5942299E5234000A87C2 /* GenerateImageView+isLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA5941299E5234000A87C2 /* GenerateImageView+isLoading.swift */; };
 		18EA5944299E54D8000A87C2 /* ImageDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA5943299E54D8000A87C2 /* ImageDataRequest.swift */; };
 		18EA5946299E66B6000A87C2 /* GenerateImageView+singleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA5945299E66B6000A87C2 /* GenerateImageView+singleImage.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		18E6103A29A52DA800E96E88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189A989A298CE347003261ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 189A98A1298CE347003261ED;
+			remoteInfo = salvador;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		18119C4D299169240098EF99 /* GenerateImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateImageView.swift; sourceTree = "<group>"; };
 		18119C4F299169540098EF99 /* ImageDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDataResponse.swift; sourceTree = "<group>"; };
-		18119C512991695E0098EF99 /* FetchImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchImage.swift; sourceTree = "<group>"; };
+		18119C512991695E0098EF99 /* CreateImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateImageService.swift; sourceTree = "<group>"; };
+		1811E27229ACD9A100595A98 /* MockFileLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFileLoaderService.swift; sourceTree = "<group>"; };
+		1811E27429ACF22000595A98 /* MockFileLoaderServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFileLoaderServiceTests.swift; sourceTree = "<group>"; };
+		182168EA29A7B61E0051D1A0 /* FileLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoaderService.swift; sourceTree = "<group>"; };
+		182C00BE299F676400FE7762 /* APISecretData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISecretData.swift; sourceTree = "<group>"; };
+		182C00C2299F9A9A00FE7762 /* APISecret.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = APISecret.json; sourceTree = "<group>"; };
 		1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageViewModel.swift; sourceTree = "<group>"; };
+		18545E3A29AE2CC400B0E0EA /* saveImageToGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveImageToGallery.swift; sourceTree = "<group>"; };
+		18545E3E29AE511700B0E0EA /* integration.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = integration.yml; sourceTree = "<group>"; };
+		1862C37F29AD0B5000B33CC2 /* DownLoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownLoadImage.swift; sourceTree = "<group>"; };
 		18834E31299D215300A4B428 /* GenerateImageView+fetchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GenerateImageView+fetchButton.swift"; sourceTree = "<group>"; };
-		1897B97529926396002C966D /* APISecret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISecret.swift; sourceTree = "<group>"; };
 		189A98A2298CE347003261ED /* salvador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = salvador.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189A98A5298CE347003261ED /* salvadorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = salvadorApp.swift; sourceTree = "<group>"; };
 		189A98A9298CE347003261ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		189A98AC298CE347003261ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18A68D6E29A65A1900B8DD29 /* CreateImageServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateImageServiceTests.swift; sourceTree = "<group>"; };
+		18DFB76629ACBB100095668E /* MockImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockImageService.swift; sourceTree = "<group>"; };
+		18E6103629A52DA700E96E88 /* salvadorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = salvadorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E6103F29A52E4F00E96E88 /* UnitTestingGenerateImageViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingGenerateImageViewModel_Tests.swift; sourceTree = "<group>"; };
 		18EA5941299E5234000A87C2 /* GenerateImageView+isLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GenerateImageView+isLoading.swift"; sourceTree = "<group>"; };
 		18EA5943299E54D8000A87C2 /* ImageDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataRequest.swift; sourceTree = "<group>"; };
 		18EA5945299E66B6000A87C2 /* GenerateImageView+singleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GenerateImageView+singleImage.swift"; sourceTree = "<group>"; };
@@ -39,6 +70,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		189A989F298CE347003261ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E6103329A52DA700E96E88 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,7 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				18119C4F299169540098EF99 /* ImageDataResponse.swift */,
+				1862C37F29AD0B5000B33CC2 /* DownLoadImage.swift */,
 				18EA5943299E54D8000A87C2 /* ImageDataRequest.swift */,
+				182C00BE299F676400FE7762 /* APISecretData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -69,21 +109,43 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = ViewModels;
+			name = ViewModels;
+			path = ../../ViewModels;
 			sourceTree = "<group>";
 		};
 		180B6AAF299B6FAC0067DF1A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				18119C512991695E0098EF99 /* FetchImage.swift */,
+				18119C512991695E0098EF99 /* CreateImageService.swift */,
+				18DFB76629ACBB100095668E /* MockImageService.swift */,
+				1811E27229ACD9A100595A98 /* MockFileLoaderService.swift */,
+				182168EA29A7B61E0051D1A0 /* FileLoaderService.swift */,
+				18545E3A29AE2CC400B0E0EA /* saveImageToGallery.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		18545E3C29AE509A00B0E0EA /* github */ = {
+			isa = PBXGroup;
+			children = (
+				18545E3D29AE50DB00B0E0EA /* workflows */,
+			);
+			path = github;
+			sourceTree = "<group>";
+		};
+		18545E3D29AE50DB00B0E0EA /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				18545E3E29AE511700B0E0EA /* integration.yml */,
+			);
+			path = workflows;
 			sourceTree = "<group>";
 		};
 		189A9899298CE347003261ED = {
 			isa = PBXGroup;
 			children = (
 				189A98A4298CE347003261ED /* salvador */,
+				18E6103729A52DA800E96E88 /* salvadorTests */,
 				189A98A3298CE347003261ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				189A98A2298CE347003261ED /* salvador.app */,
+				18E6103629A52DA700E96E88 /* salvadorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,10 +165,9 @@
 				180B6AAC299B6ED10067DF1A /* Views */,
 				189A98A5298CE347003261ED /* salvadorApp.swift */,
 				180B6AAF299B6FAC0067DF1A /* Helpers */,
-				180B6AAE299B6F480067DF1A /* ViewModels */,
 				180B6AAD299B6F0F0067DF1A /* Models */,
-				1897B97529926396002C966D /* APISecret.swift */,
 				189A98A9298CE347003261ED /* Assets.xcassets */,
+				18545E3C29AE509A00B0E0EA /* github */,
 				189A98AB298CE347003261ED /* Preview Content */,
 			);
 			path = salvador;
@@ -115,8 +177,19 @@
 			isa = PBXGroup;
 			children = (
 				189A98AC298CE347003261ED /* Preview Assets.xcassets */,
+				182C00C2299F9A9A00FE7762 /* APISecret.json */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18E6103729A52DA800E96E88 /* salvadorTests */ = {
+			isa = PBXGroup;
+			children = (
+				18E6103F29A52E4F00E96E88 /* UnitTestingGenerateImageViewModel_Tests.swift */,
+				18A68D6E29A65A1900B8DD29 /* CreateImageServiceTests.swift */,
+				1811E27429ACF22000595A98 /* MockFileLoaderServiceTests.swift */,
+			);
+			path = salvadorTests;
 			sourceTree = "<group>";
 		};
 		18EA5940299E4F8E000A87C2 /* GenerateImage */ = {
@@ -125,8 +198,9 @@
 				18119C4D299169240098EF99 /* GenerateImageView.swift */,
 				18834E31299D215300A4B428 /* GenerateImageView+fetchButton.swift */,
 				18EA5941299E5234000A87C2 /* GenerateImageView+isLoading.swift */,
-				1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */,
 				18EA5945299E66B6000A87C2 /* GenerateImageView+singleImage.swift */,
+				1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */,
+				180B6AAE299B6F480067DF1A /* ViewModels */,
 			);
 			path = GenerateImage;
 			sourceTree = "<group>";
@@ -151,6 +225,24 @@
 			productReference = 189A98A2298CE347003261ED /* salvador.app */;
 			productType = "com.apple.product-type.application";
 		};
+		18E6103529A52DA700E96E88 /* salvadorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E6103E29A52DA800E96E88 /* Build configuration list for PBXNativeTarget "salvadorTests" */;
+			buildPhases = (
+				18E6103229A52DA700E96E88 /* Sources */,
+				18E6103329A52DA700E96E88 /* Frameworks */,
+				18E6103429A52DA700E96E88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18E6103B29A52DA800E96E88 /* PBXTargetDependency */,
+			);
+			name = salvadorTests;
+			productName = salvadorTests;
+			productReference = 18E6103629A52DA700E96E88 /* salvadorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -163,6 +255,11 @@
 				TargetAttributes = {
 					189A98A1298CE347003261ED = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					18E6103529A52DA700E96E88 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+						TestTargetID = 189A98A1298CE347003261ED;
 					};
 				};
 			};
@@ -180,6 +277,7 @@
 			projectRoot = "";
 			targets = (
 				189A98A1298CE347003261ED /* salvador */,
+				18E6103529A52DA700E96E88 /* salvadorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -190,7 +288,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				189A98AD298CE347003261ED /* Preview Assets.xcassets in Resources */,
+				182C00C3299F9A9A00FE7762 /* APISecret.json in Resources */,
 				189A98AA298CE347003261ED /* Assets.xcassets in Resources */,
+				18545E3F29AE511700B0E0EA /* integration.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E6103429A52DA700E96E88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,20 +308,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18119C522991695E0098EF99 /* FetchImage.swift in Sources */,
-				1897B97629926396002C966D /* APISecret.swift in Sources */,
+				18119C522991695E0098EF99 /* CreateImageService.swift in Sources */,
+				182C00BF299F676400FE7762 /* APISecretData.swift in Sources */,
 				18EA5944299E54D8000A87C2 /* ImageDataRequest.swift in Sources */,
 				18119C50299169540098EF99 /* ImageDataResponse.swift in Sources */,
 				1835D7DF299A8B1D0090CCF1 /* GenerateImageViewModel.swift in Sources */,
+				1811E27329ACD9A100595A98 /* MockFileLoaderService.swift in Sources */,
 				18EA5946299E66B6000A87C2 /* GenerateImageView+singleImage.swift in Sources */,
+				1862C38029AD0B5000B33CC2 /* DownLoadImage.swift in Sources */,
 				18834E32299D215300A4B428 /* GenerateImageView+fetchButton.swift in Sources */,
 				189A98A6298CE347003261ED /* salvadorApp.swift in Sources */,
 				18EA5942299E5234000A87C2 /* GenerateImageView+isLoading.swift in Sources */,
+				18545E3B29AE2CC400B0E0EA /* saveImageToGallery.swift in Sources */,
+				182168EB29A7B61E0051D1A0 /* FileLoaderService.swift in Sources */,
 				18119C4E299169240098EF99 /* GenerateImageView.swift in Sources */,
+				18DFB76729ACBB100095668E /* MockImageService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E6103229A52DA700E96E88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A68D6F29A65A1900B8DD29 /* CreateImageServiceTests.swift in Sources */,
+				18E6104029A52E4F00E96E88 /* UnitTestingGenerateImageViewModel_Tests.swift in Sources */,
+				1811E27529ACF22000595A98 /* MockFileLoaderServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18E6103B29A52DA800E96E88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 189A98A1298CE347003261ED /* salvador */;
+			targetProxy = 18E6103A29A52DA800E96E88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		189A98AE298CE347003261ED /* Debug */ = {
@@ -336,11 +466,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"salvador/Preview Content\"";
+				DEVELOPMENT_TEAM = H7856N8BHP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "I need this ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -350,9 +483,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.geury.salvador;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.geury.salvador;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -364,11 +498,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"salvador/Preview Content\"";
+				DEVELOPMENT_TEAM = H7856N8BHP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "I need this ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -378,12 +515,60 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.geury.salvador;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.geury.salvador;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18E6103C29A52DA800E96E88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.geury.salvadorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/salvador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/salvador";
+			};
+			name = Debug;
+		};
+		18E6103D29A52DA800E96E88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.geury.salvadorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/salvador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/salvador";
 			};
 			name = Release;
 		};
@@ -404,6 +589,15 @@
 			buildConfigurations = (
 				189A98B1298CE347003261ED /* Debug */,
 				189A98B2298CE347003261ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E6103E29A52DA800E96E88 /* Build configuration list for PBXNativeTarget "salvadorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E6103C29A52DA800E96E88 /* Debug */,
+				18E6103D29A52DA800E96E88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

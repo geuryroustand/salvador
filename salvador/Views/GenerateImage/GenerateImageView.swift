@@ -11,16 +11,16 @@ struct GenerateImageView: View {
     
     //    @StateObject private var viewModel = GenerateImageViewModel()
     
-    @ObservedObject  var viewModel = GenerateImageViewModel()
+    @ObservedObject  var viewModel = ViewModel()
     
     @State  var userInputValue = ""
     
     @State var userIsTyping = false
     
-  
-   
+    
+    
     var body: some View {
- 
+        
         ZStack {
             NavigationView{
                 Form {
@@ -33,7 +33,7 @@ struct GenerateImageView: View {
                 }
                 .navigationTitle("Type your wish image")
                 .navigationBarTitleDisplayMode(.inline)
-                .alert(isPresented: $viewModel.showingAlert){
+                .alert(isPresented: $viewModel.showAlert){
                     Alert(title: Text("Something went wrong again later"), message: Text("\(viewModel.errorString)"), dismissButton: .default(Text("Got it")))
                 }
                 
@@ -45,12 +45,23 @@ struct GenerateImageView: View {
                 
             }
             
-            
             if (viewModel.imageData != nil) {
                 
-                singleImage
+                VStack {
+                    singleImage
+                    
+                    Button{
+                        saveImage.share.imageURL = viewModel.imageURL
+                        saveImage.share.saveImageToGallery()
+        
+                    
+                }
+            label: {
+                Image(systemName: "square.and.arrow.down")
+            }
+            .buttonStyle(.borderedProminent)
                 
-
+                
             }
             
             
@@ -61,7 +72,11 @@ struct GenerateImageView: View {
         
     }
     
-  
+    
+    
+}
+
+
 }
 
 struct ContentView_Previews: PreviewProvider {
