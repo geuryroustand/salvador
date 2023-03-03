@@ -148,6 +148,7 @@
 		189A98A4298CE347003261ED /* salvador */ = {
 			isa = PBXGroup;
 			children = (
+				18C4068B29B1F4C1001A11BD /* Secrets */,
 				18C4068529B1DC7F001A11BD /* Info.plist */,
 				180B6AAC299B6ED10067DF1A /* Views */,
 				189A98A5298CE347003261ED /* salvadorApp.swift */,
@@ -163,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				189A98AC298CE347003261ED /* Preview Assets.xcassets */,
-				182C00C2299F9A9A00FE7762 /* APISecret.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -174,6 +174,14 @@
 				18C4068929B1E60F001A11BD /* ci_pre_xcodebuild.sh */,
 			);
 			path = ci_scripts;
+			sourceTree = "<group>";
+		};
+		18C4068B29B1F4C1001A11BD /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				182C00C2299F9A9A00FE7762 /* APISecret.json */,
+			);
+			path = Secrets;
 			sourceTree = "<group>";
 		};
 		18E6103729A52DA800E96E88 /* salvadorTests */ = {

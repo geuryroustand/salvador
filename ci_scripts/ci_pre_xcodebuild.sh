@@ -8,7 +8,7 @@ echo "Stage: PRE-Xcode Build is activated .... "
 cd $CI_WORKSPACE/ci_scripts || exit 1
 
 # Write a JSON File containing all the environment variables and secrets.
-printf "{\"APISecret\":\"%s\"}" "$APISecret" >> ../salvador/Preview Content/APISecret.json
+printf "{\"APISecret\":\"%s\"}" "$APISecret" >> salvador/Secrets/APISecret.json
 
 echo "Wrote Secrets.json file."
 
