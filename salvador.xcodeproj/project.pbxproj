@@ -23,6 +23,7 @@
 		189A98AD298CE347003261ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189A98AC298CE347003261ED /* Preview Assets.xcassets */; };
 		18A68D6F29A65A1900B8DD29 /* CreateImageServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A68D6E29A65A1900B8DD29 /* CreateImageServiceTests.swift */; };
 		18C4068A29B1E60F001A11BD /* ci_pre_xcodebuild.sh in Resources */ = {isa = PBXBuildFile; fileRef = 18C4068929B1E60F001A11BD /* ci_pre_xcodebuild.sh */; };
+		18C4069729B231BE001A11BD /* APISecret.json in Resources */ = {isa = PBXBuildFile; fileRef = 18C4069629B231BE001A11BD /* APISecret.json */; };
 		18DFB76729ACBB100095668E /* MockImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFB76629ACBB100095668E /* MockImageService.swift */; };
 		18E6104029A52E4F00E96E88 /* UnitTestingGenerateImageViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6103F29A52E4F00E96E88 /* UnitTestingGenerateImageViewModel_Tests.swift */; };
 		18EA5942299E5234000A87C2 /* GenerateImageView+isLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA5941299E5234000A87C2 /* GenerateImageView+isLoading.swift */; };
@@ -59,6 +60,7 @@
 		18A68D6E29A65A1900B8DD29 /* CreateImageServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateImageServiceTests.swift; sourceTree = "<group>"; };
 		18C4068529B1DC7F001A11BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		18C4068929B1E60F001A11BD /* ci_pre_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_pre_xcodebuild.sh; sourceTree = "<group>"; };
+		18C4069629B231BE001A11BD /* APISecret.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = APISecret.json; sourceTree = "<group>"; };
 		18DFB76629ACBB100095668E /* MockImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockImageService.swift; sourceTree = "<group>"; };
 		18E6103629A52DA700E96E88 /* salvadorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = salvadorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E6103F29A52E4F00E96E88 /* UnitTestingGenerateImageViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingGenerateImageViewModel_Tests.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		18C4069129B20490001A11BD /* Secrets */ = {
 			isa = PBXGroup;
 			children = (
+				18C4069629B231BE001A11BD /* APISecret.json */,
 			);
 			path = Secrets;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			files = (
 				189A98AD298CE347003261ED /* Preview Assets.xcassets in Resources */,
 				18C4068A29B1E60F001A11BD /* ci_pre_xcodebuild.sh in Resources */,
+				18C4069729B231BE001A11BD /* APISecret.json in Resources */,
 				189A98AA298CE347003261ED /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
