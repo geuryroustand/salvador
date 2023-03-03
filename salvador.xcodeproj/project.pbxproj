@@ -14,7 +14,6 @@
 		1811E27529ACF22000595A98 /* MockFileLoaderServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811E27429ACF22000595A98 /* MockFileLoaderServiceTests.swift */; };
 		182168EB29A7B61E0051D1A0 /* FileLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182168EA29A7B61E0051D1A0 /* FileLoaderService.swift */; };
 		182C00BF299F676400FE7762 /* APISecretData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C00BE299F676400FE7762 /* APISecretData.swift */; };
-		182C00C3299F9A9A00FE7762 /* APISecret.json in Resources */ = {isa = PBXBuildFile; fileRef = 182C00C2299F9A9A00FE7762 /* APISecret.json */; };
 		1835D7DF299A8B1D0090CCF1 /* GenerateImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */; };
 		18545E3B29AE2CC400B0E0EA /* saveImageToGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18545E3A29AE2CC400B0E0EA /* saveImageToGallery.swift */; };
 		1862C38029AD0B5000B33CC2 /* DownLoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862C37F29AD0B5000B33CC2 /* DownLoadImage.swift */; };
@@ -49,7 +48,6 @@
 		1811E27429ACF22000595A98 /* MockFileLoaderServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFileLoaderServiceTests.swift; sourceTree = "<group>"; };
 		182168EA29A7B61E0051D1A0 /* FileLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoaderService.swift; sourceTree = "<group>"; };
 		182C00BE299F676400FE7762 /* APISecretData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISecretData.swift; sourceTree = "<group>"; };
-		182C00C2299F9A9A00FE7762 /* APISecret.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = APISecret.json; sourceTree = "<group>"; };
 		1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageViewModel.swift; sourceTree = "<group>"; };
 		18545E3A29AE2CC400B0E0EA /* saveImageToGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveImageToGallery.swift; sourceTree = "<group>"; };
 		1862C37F29AD0B5000B33CC2 /* DownLoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownLoadImage.swift; sourceTree = "<group>"; };
@@ -148,7 +146,6 @@
 		189A98A4298CE347003261ED /* salvador */ = {
 			isa = PBXGroup;
 			children = (
-				18C4068B29B1F4C1001A11BD /* Secrets */,
 				18C4068529B1DC7F001A11BD /* Info.plist */,
 				180B6AAC299B6ED10067DF1A /* Views */,
 				189A98A5298CE347003261ED /* salvadorApp.swift */,
@@ -174,14 +171,6 @@
 				18C4068929B1E60F001A11BD /* ci_pre_xcodebuild.sh */,
 			);
 			path = ci_scripts;
-			sourceTree = "<group>";
-		};
-		18C4068B29B1F4C1001A11BD /* Secrets */ = {
-			isa = PBXGroup;
-			children = (
-				182C00C2299F9A9A00FE7762 /* APISecret.json */,
-			);
-			path = Secrets;
 			sourceTree = "<group>";
 		};
 		18E6103729A52DA800E96E88 /* salvadorTests */ = {
@@ -291,7 +280,6 @@
 			files = (
 				189A98AD298CE347003261ED /* Preview Assets.xcassets in Resources */,
 				18C4068A29B1E60F001A11BD /* ci_pre_xcodebuild.sh in Resources */,
-				182C00C3299F9A9A00FE7762 /* APISecret.json in Resources */,
 				189A98AA298CE347003261ED /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
