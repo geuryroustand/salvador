@@ -12,7 +12,7 @@ printf "{\"OPEN_AI_API_KEY\":\"%s\"}" "$OPEN_AI_API_KEY" >> ../salvador/Secrets/
 
 echo ../salvador/Secrets/APISecret.json
 
-echo "Wrote Secrets.json file."
+echo "Wrote APISecret.json file."
 
 echo "Stage: PRE-Xcode Build is DONE .... "
 
