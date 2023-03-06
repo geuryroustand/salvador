@@ -19,14 +19,12 @@ func FileLoaderService(fileName: String) throws -> String {
           let decodeKey = Data(base64Encoded: jsonData.OPEN_AI_API_KEY) else {
            return ""
     }
-    
     key = String(data: decodeKey, encoding: .utf8)!
     
     //    else{
     //        throw JSONFileError.JSONFileNowFound
     //
     //    }
-    
     
     return key
     
