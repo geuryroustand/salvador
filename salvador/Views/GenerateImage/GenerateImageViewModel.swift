@@ -33,7 +33,7 @@ extension GenerateImageView  {
                     throw JSONFileError.JSONFileNowFound
                 }
                 
-                let response = try await CreateImageService.shared.generateImage(withPrompt: userInputValue, apiKey:APISecretKey.APISecret)
+                let response = try await CreateImageService.shared.generateImage(withPrompt: userInputValue, apiKey:APISecretKey.OPEN_AI_API_KEY)
                 
                 if let  url = response.data.map(\.url).first {
                                         
