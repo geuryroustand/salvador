@@ -28,24 +28,24 @@ extension GenerateImageView  {
             isLoading = true
             
             do {
-//
-//                guard let APISecretKey  =  try? FileLoaderService(fileName: "APISecret") else{
-//                    throw JSONFileError.JSONFileNowFound
-//                }
-//
+                //
+                //                guard let APISecretKey  =  try? FileLoaderService(fileName: "APISecret") else{
+                //                    throw JSONFileError.JSONFileNowFound
+                //                }
+                //
                 let APISecretKey  =  try FileLoaderService(fileName: "APISecret")
                 
                 let response = try await CreateImageService.shared.generateImage(withPrompt: userInputValue, apiKey:APISecretKey)
                 
                 if let  url = response.data.map(\.url).first {
-                                        
+                    
                     imageURL = URL(string: "\(url)")
-
+                    
                     let (data, _) = try await URLSession.shared.data(from: url)
-                   
-
+                    
+                    
                     imageData  = UIImage(data: data)
-
+                    
                     isLoading = false
                     
                 }
