@@ -21,12 +21,12 @@ final class MockImageService: XCTestCase {
     
     func testLoadFile_WithValidData_ShouldReturnAPISecretData() throws {
         let mockService = MockFileLoaderService()
-        mockService.apiSecretData = APISecretData(APISecret: "test api secret")
+        mockService.apiSecretData = APISecretData(OPEN_AI_API_KEY: "test api secret")
         
         
         let result = try mockService.loadFile(fileName: "test")
         
-        XCTAssertEqual(result.APISecret, "test api secret")
+        XCTAssertEqual(result.OPEN_AI_API_KEY, "test api secret")
     }
     
     

@@ -14,10 +14,9 @@
 		1811E27529ACF22000595A98 /* MockFileLoaderServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811E27429ACF22000595A98 /* MockFileLoaderServiceTests.swift */; };
 		182168EB29A7B61E0051D1A0 /* FileLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182168EA29A7B61E0051D1A0 /* FileLoaderService.swift */; };
 		182C00BF299F676400FE7762 /* APISecretData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C00BE299F676400FE7762 /* APISecretData.swift */; };
-		182C00C3299F9A9A00FE7762 /* APISecret.json in Resources */ = {isa = PBXBuildFile; fileRef = 182C00C2299F9A9A00FE7762 /* APISecret.json */; };
 		1835D7DF299A8B1D0090CCF1 /* GenerateImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */; };
+		1845865129B748340086A5DD /* APISecret.json in Resources */ = {isa = PBXBuildFile; fileRef = 1845865029B748340086A5DD /* APISecret.json */; };
 		18545E3B29AE2CC400B0E0EA /* saveImageToGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18545E3A29AE2CC400B0E0EA /* saveImageToGallery.swift */; };
-		18545E3F29AE511700B0E0EA /* integration.yml in Resources */ = {isa = PBXBuildFile; fileRef = 18545E3E29AE511700B0E0EA /* integration.yml */; };
 		1862C38029AD0B5000B33CC2 /* DownLoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862C37F29AD0B5000B33CC2 /* DownLoadImage.swift */; };
 		18834E32299D215300A4B428 /* GenerateImageView+fetchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18834E31299D215300A4B428 /* GenerateImageView+fetchButton.swift */; };
 		189A98A6298CE347003261ED /* salvadorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A98A5298CE347003261ED /* salvadorApp.swift */; };
@@ -49,10 +48,9 @@
 		1811E27429ACF22000595A98 /* MockFileLoaderServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFileLoaderServiceTests.swift; sourceTree = "<group>"; };
 		182168EA29A7B61E0051D1A0 /* FileLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoaderService.swift; sourceTree = "<group>"; };
 		182C00BE299F676400FE7762 /* APISecretData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISecretData.swift; sourceTree = "<group>"; };
-		182C00C2299F9A9A00FE7762 /* APISecret.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = APISecret.json; sourceTree = "<group>"; };
 		1835D7DE299A8B1D0090CCF1 /* GenerateImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageViewModel.swift; sourceTree = "<group>"; };
+		1845865029B748340086A5DD /* APISecret.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = APISecret.json; sourceTree = "<group>"; };
 		18545E3A29AE2CC400B0E0EA /* saveImageToGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveImageToGallery.swift; sourceTree = "<group>"; };
-		18545E3E29AE511700B0E0EA /* integration.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = integration.yml; sourceTree = "<group>"; };
 		1862C37F29AD0B5000B33CC2 /* DownLoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownLoadImage.swift; sourceTree = "<group>"; };
 		18834E31299D215300A4B428 /* GenerateImageView+fetchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GenerateImageView+fetchButton.swift"; sourceTree = "<group>"; };
 		189A98A2298CE347003261ED /* salvador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = salvador.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +58,8 @@
 		189A98A9298CE347003261ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		189A98AC298CE347003261ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18A68D6E29A65A1900B8DD29 /* CreateImageServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateImageServiceTests.swift; sourceTree = "<group>"; };
+		18C4068529B1DC7F001A11BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		18C4068929B1E60F001A11BD /* ci_pre_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_pre_xcodebuild.sh; sourceTree = "<group>"; };
 		18DFB76629ACBB100095668E /* MockImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockImageService.swift; sourceTree = "<group>"; };
 		18E6103629A52DA700E96E88 /* salvadorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = salvadorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E6103F29A52E4F00E96E88 /* UnitTestingGenerateImageViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingGenerateImageViewModel_Tests.swift; sourceTree = "<group>"; };
@@ -125,25 +125,18 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		18545E3C29AE509A00B0E0EA /* github */ = {
+		1845864F29B7480A0086A5DD /* Secrets */ = {
 			isa = PBXGroup;
 			children = (
-				18545E3D29AE50DB00B0E0EA /* workflows */,
+				1845865029B748340086A5DD /* APISecret.json */,
 			);
-			path = github;
-			sourceTree = "<group>";
-		};
-		18545E3D29AE50DB00B0E0EA /* workflows */ = {
-			isa = PBXGroup;
-			children = (
-				18545E3E29AE511700B0E0EA /* integration.yml */,
-			);
-			path = workflows;
+			path = Secrets;
 			sourceTree = "<group>";
 		};
 		189A9899298CE347003261ED = {
 			isa = PBXGroup;
 			children = (
+				18C4068829B1E58B001A11BD /* ci_scripts */,
 				189A98A4298CE347003261ED /* salvador */,
 				18E6103729A52DA800E96E88 /* salvadorTests */,
 				189A98A3298CE347003261ED /* Products */,
@@ -162,12 +155,13 @@
 		189A98A4298CE347003261ED /* salvador */ = {
 			isa = PBXGroup;
 			children = (
+				1845864F29B7480A0086A5DD /* Secrets */,
+				18C4068529B1DC7F001A11BD /* Info.plist */,
 				180B6AAC299B6ED10067DF1A /* Views */,
 				189A98A5298CE347003261ED /* salvadorApp.swift */,
 				180B6AAF299B6FAC0067DF1A /* Helpers */,
 				180B6AAD299B6F0F0067DF1A /* Models */,
 				189A98A9298CE347003261ED /* Assets.xcassets */,
-				18545E3C29AE509A00B0E0EA /* github */,
 				189A98AB298CE347003261ED /* Preview Content */,
 			);
 			path = salvador;
@@ -177,9 +171,16 @@
 			isa = PBXGroup;
 			children = (
 				189A98AC298CE347003261ED /* Preview Assets.xcassets */,
-				182C00C2299F9A9A00FE7762 /* APISecret.json */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18C4068829B1E58B001A11BD /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				18C4068929B1E60F001A11BD /* ci_pre_xcodebuild.sh */,
+			);
+			path = ci_scripts;
 			sourceTree = "<group>";
 		};
 		18E6103729A52DA800E96E88 /* salvadorTests */ = {
@@ -288,9 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				189A98AD298CE347003261ED /* Preview Assets.xcassets in Resources */,
-				182C00C3299F9A9A00FE7762 /* APISecret.json in Resources */,
+				1845865129B748340086A5DD /* APISecret.json in Resources */,
 				189A98AA298CE347003261ED /* Assets.xcassets in Resources */,
-				18545E3F29AE511700B0E0EA /* integration.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +473,7 @@
 				DEVELOPMENT_TEAM = H7856N8BHP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = salvador/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "I need this ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -505,6 +506,7 @@
 				DEVELOPMENT_TEAM = H7856N8BHP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = salvador/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "I need this ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

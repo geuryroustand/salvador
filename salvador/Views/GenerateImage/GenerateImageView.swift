@@ -34,7 +34,7 @@ struct GenerateImageView: View {
                 .navigationTitle("Type your wish image")
                 .navigationBarTitleDisplayMode(.inline)
                 .alert(isPresented: $viewModel.showAlert){
-                    Alert(title: Text("Something went wrong again later"), message: Text("\(viewModel.errorString)"), dismissButton: .default(Text("Got it")))
+                    Alert(title: Text("Something went wrong, please try again later"), message: Text("\(viewModel.errorString)"), dismissButton: .default(Text("Got it")))
                 }
                 
             }

@@ -8,5 +8,5 @@
 import Foundation
 
 struct APISecretData: Decodable {
-    let APISecret: String
+    let OPEN_AI_API_KEY: String
 }
