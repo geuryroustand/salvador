@@ -29,13 +29,13 @@ extension GenerateImageView  {
             
             do {
                 
-                guard let APISecretKey  =  try? FileLoaderService(fileName: "APISecret") else{
-                    throw JSONFileError.JSONFileNowFound
-                }
+                //                guard let APISecretKey  =  try? FileLoaderService(fileName: "APISecret") else{
+                //                    throw JSONFileError.JSONFileNowFound
+                //                }
                 
-                //                let APISecretKey  =  try FileLoaderService(fileName: "APISecret")
+                let APISecretKey  =  try FileLoaderService(fileName: "APISecret")
                 
-                let response = try await CreateImageService.shared.generateImage(withPrompt: userInputValue, apiKey:APISecretKey.OPEN_AI_API_KEY)
+                let response = try await CreateImageService.shared.generateImage(withPrompt: userInputValue, apiKey:APISecretKey)
                 
                 if let  url = response.data.map(\.url).first {
                     
