@@ -14,7 +14,7 @@ echo $CI_WORKSPACE
 
 # Write a JSON File containing all the environment variables and secrets.
 
-printf "{\"OPEN_AI_API_KEY\":\"%s\"}" "$OPEN_AI_API_KEY" >> ../salvador/Secrets/APISecret.json
+#printf "{\"OPEN_AI_API_KEY\":\"%s\"}" "$OPEN_AI_API_KEY" >> ../salvador/Secrets/APISecret.json
 # Create the Secrets directory if it doesn't already exist
 
 #mkdir -p ../salvador/Secrets
